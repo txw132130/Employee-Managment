@@ -1,0 +1,33 @@
+<div class="w3-container">
+	<form>
+	  <h3>Create Employee:</h3>
+	  <button type="button" class="btn btn-success" ng-click = "goBack()" style = "float:right">Previous</button>
+	     <form id="form1" runat="server">
+	        <input type='file' fileread="uploadfile" id="imgInp" />
+	        <img id="blah" src="pics/images.png" alt="your image" />
+   		 </form><br/>
+<!--    		 <button type="button" class="btn btn-success" ng-click = "upload(uploadfile)">Submit</button><br/> -->
+	     
+	    <label>Name:</label>
+	    <input class="w3-input w3-border" type="text" ng-model="Name"  placeholder="Name">
+	  <br>
+	    <label>Manager Name:</label>
+	    <select ng-model="managerName" ng-options=" 'Id:' +Employee.id+Employee.Name +Employee.title for Employee in Employees "required>
+		</select>
+	  <br>
+	  <br>
+	    <label>Title:</label>
+	    <input class="w3-input w3-border" type="text" ng-model="title"  placeholder="Title">
+	  <br>
+	    <label>Phone:</label>
+	    <input class="w3-input w3-border" type="tel" ng-model="Phone"  placeholder="Phone number">
+	  <br>
+	    <label>Email:</label>
+	    <input class="w3-input w3-border" type="email" ng-model="email" placeholder="Email">
+	  <br>
+
+	 <button class="w3-btn w3-green w3-ripple"  ng-click="upload(uploadfile);add()">&#10004; Save Changes</button>
+
+
+	</form>
+</div>

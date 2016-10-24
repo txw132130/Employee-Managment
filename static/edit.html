@@ -1,0 +1,42 @@
+<div class="w3-container">
+	<form>
+	  <h3>Edit Employee:</h3>
+	   <button type="button" class="btn btn-success" ng-click = "goBack()" style = "float:right">Previous</button>
+		<form id="form1" runat="server">
+	        <input type='file' fileread="uploadfile" id="imgInp" />
+	        <img id="blah" src="pics/{{Employee.pic}}" alt="your image" />
+   		 </form><br/>
+<!-- 	   <button type="button" class="btn btn-success" ng-click = "upload(uploadfile)">Submit</button><br/> -->
+   	  
+	    <label>Name:</label>
+	    <input class="w3-input w3-border" type="text" ng-model="Name"  >
+	  <br>
+	  <br>
+	    <label>Manager Name:</label>
+	    <div>{{managerName}}</div><br/>
+	     <label>Change manager:</label>
+	    <select   ng-model="Manager_Name"  ng-options="Manager.id+Manager.Name +Manager.title for Manager in Managers " required>					
+		</select>
+<!-- 	   <select   ng-model="Manager_Name"> -->
+<!-- 		   <option ng-selected="{{Manager.Name ==  M_N}}" -->
+<!-- 	            ng-repeat="Manager in Managers" -->
+<!-- 	            value="{{Manager}}"> -->
+<!-- 	      		{{Manager.id+Manager.Name+Manager.title}} -->
+<!-- 	    	</option> -->
+<!-- 	   </select> -->
+	  <br/><br/>
+	    <label>Title:</label>
+	    <input class="w3-input w3-border" type="text" ng-model="title"  >
+	  <br>
+	    <label>Phone:</label><br/>
+	    <div>
+	    <input class="inputphone"  type="tel" ng-model="Phone">   
+	  	</div>
+	  <br>
+	    <label>Email:</label><br/>
+	  	<div>
+	  	<input class="inputphone" type="email" ng-model="email" >
+	    </div>
+	  <button class="w3-btn w3-green w3-ripple"  ng-click="upload(uploadfile);editEmployee()">&#10004; Save Changes</button>
+	</form>
+</div>

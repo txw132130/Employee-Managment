@@ -1,0 +1,35 @@
+<div class="w3-container">
+	<h3>View Reports</h3>
+	  <button type="button" class="btn btn-success" ng-click = "goBack()" >Previous</button><br/>
+		<table class="w3-table w3-bordered w3-striped">
+		  <tr>
+		    <th >Photo</th>
+		    <th ng-click="sort('Name')">Name</th>
+		    <th ng-click="sort('managerName')">Manager Name</th>
+		    <th ng-click="sort('reports')">Reports</th>
+		    <th ng-click="sort('title')">Title</th>
+		    <th ng-click="sort('Phone')">Phone</th>
+		    <th ng-click="sort('email')">Email</th>
+		    <th>Edit</th>
+		    <th>Delete</th>
+		  </tr>
+			  <tr  ng-repeat="Employee in Employees |filter:{managerId : managerid}" > 
+			    <td>
+			    <img ng-src="pics/{{Employee.pic}}" style = "width:70px;height:70px">
+			    </td>
+			    <td>{{ Employee.Name }}</td>
+			    <td>{{ Employee.managerName }}</td>
+			    <td>{{ Employee.reports }}</td>
+			    <td>{{ Employee.title }}</td>
+			    <td>{{ Employee.Phone }}</td>
+			    <td>{{ Employee.email }}</td>
+			    <td>
+			    <a href="#/route2">  <button class="w3-btn w3-ripple" ng-click="save(Employee.Id)">&#9998; Edit</button></a>
+			    </td>
+			    <td>
+			      <button class="w3-btn w3-ripple" ng-click="remove(Employee.Id);"> Delete</button>
+			    </td>
+			  </tr>
+		</table>
+	
+</div>

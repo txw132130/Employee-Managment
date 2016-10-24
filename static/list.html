@@ -1,0 +1,41 @@
+<div class="w3-container">
+	<h3>Employee</h3>
+<!-- 	<a href="#/createNew"><button class="w3-btn w3-green w3-ripple" style = "float:right">  &#9998;Create New Employee</button></a> -->
+    <label >Search</label>
+    <input type="text" ng-model="search"  placeholder="Search"></input>
+	<div infinite-scroll="getMoreData()"  infinite-scroll-distance='0' >
+		<table class="w3-table w3-bordered w3-striped">
+		  <tr>
+		    <th >Photo</th>
+		    <th ng-click="sort('Name')">Name</th>
+		    <th ng-click="sort('managerName')">Manager Name</th>
+		    <th ng-click="sort('reports')">Reports</th>
+		    <th ng-click="sort('title')">Title</th>
+		    <th ng-click="sort('Phone')">Phone</th>
+		    <th ng-click="sort('email')">Email</th>
+		    <th>Edit</th>
+		    <th>Delete</th>
+		  </tr>
+			  <tr  ng-repeat="Employee in data | filter:search | orderBy:sortKey:reverse" > 
+			    <td>
+			    <img ng-src="pics/{{Employee.pic}}" style = "width:70px;height:70px">
+			    </td>
+			    <td>{{ Employee.Name }}</td>
+			    <td><a ng-click="save(Employee.managerId); go('list/' + Employee.id)">{{ Employee.managerName }}</td>
+			    <td><a ng-click="save(Employee.id); go('list/' + Employee.id + '/reports')">{{ Employee.reports }}</a></td>
+			    <td>{{ Employee.title }}</td>
+			    <td>{{ Employee.Phone }} <a href="tel:{{Employee.Phone}}"><div class="glyphicon glyphicon-earphone"></div></a> </td>
+			    <td>{{ Employee.email }} <a href="mailto:{{Employee.email}}"><div class="glyphicon glyphicon-envelope"></div></a></td>
+			    <td>
+			    <a href="#/edit">  <button class="w3-btn w3-ripple" ng-click="save(Employee.id)">&#9998; Edit</button></a>
+			    </td>
+			    <td>
+			      <button class="w3-btn w3-ripple" ng-click="remove(Employee.id);"> Delete</button>
+			    </td>
+			  </tr>
+		 
+		</table>
+	 </div>
+	<br>
+	
+</div>

@@ -1,0 +1,147 @@
+{
+    "_id" : ObjectId("57e8579e55e195b227f29a78"),
+    "id" : 1,
+    "Name" : "James King",
+    "managerId" : 0,
+    "managerName" : "",
+    "reports" : 4,
+    "title" : "President and CEO",
+    "Phone" : "617-000-0001",
+    "email" : "jking@fakemail.com",
+    "pic" : "james_king.jpg"
+}
+
+{
+    "_id" : ObjectId("57d880d655e195b227eb0e65"),
+    "id" : 2,
+    "Name" : "Julie Taylor",
+    "managerId" : 1,
+    "managerName" : "James King",
+    "reports" : 2,
+    "title" : "VP of Marketing",
+    "Phone" : "617-000-0002",
+    "email" : "jtaylor@fakemail.com",
+    "pic" : "julie_taylor.jpg"
+}
+
+{
+    "_id" : ObjectId("57e875d155e195b227f2a101"),
+    "id": 3,
+    "Name": "Eugene Lee", 
+    "managerId": 1, 
+    "managerName": "James King", 
+    "reports": 0, "title": "CFO", 
+    "Phone": "617-000-0003", 
+    "email": "elee@fakemail.com", 
+    "pic": "eugene_lee.jpg"
+}
+
+{
+    "_id" : ObjectId("57e875d855e195b227f2a102"),
+    "id" : 4,
+    "Name" : "John Williams",
+    "managerId" : 1,
+    "managerName" : "James King",
+    "reports" : 3,
+    "title" : "VP of Engineering",
+    "Phone" : "617-000-0004",
+    "email" : "jwilliams@gmail.com",
+    "pic" : "john_williams.jpg"
+}
+{
+    "_id" : ObjectId("57e875e055e195b227f2a103"),
+    "id" : 5,
+    "Name" : "Ray Moore",
+    "managerId" : 1,
+    "managerName" : "James King",
+    "reports" : 2,
+    "title" : "VP of Sales",
+    "Phone" : "617-000-0005",
+    "email" : "rmoore@gmail.com",
+    "pic" : "ray_moore.jpg"
+}
+{
+    "_id" : ObjectId("57e875e755e195b227f2a104"),
+    "id" : 6,
+    "Name" : "Paul Jones",
+    "managerId" : 4,
+    "managerName" : "John Williams",
+    "reports" : 0,
+    "title" : "QA Manager",
+    "Phone" : "617-000-0006",
+    "email" : "pjones@gmail.com",
+    "pic" : "paul_jones.jpg"
+}
+{
+    "_id" : ObjectId("57e875ef55e195b227f2a105"),
+    "id" : 7,
+    "Name" : "Paula Gates",
+    "managerId" : 4,
+    "managerName" : "John Williams",
+    "reports" : 0,
+    "title" : "Software Architect",
+    "Phone" : "617-000-0007",
+    "email" : "pgates@gmail.com",
+    "pic" : "paula_gates.jpg"
+}
+{
+    "_id" : ObjectId("57e875f555e195b227f2a106"),
+    "id" : 8,
+    "Name" : "Lisa Wong",
+    "managerId" : 2,
+    "managerName" : "Julie Taylor",
+    "reports" : 0,
+    "title" : "Marketing Manager",
+    "Phone" : "617-000-0008",
+    "email" : "lwong@gmail.com",
+    "pic" : "lisa_wong.jpg"
+}
+{
+    "_id" : ObjectId("57e875fd55e195b227f2a107"),
+    "id" : 9,
+    "Name" : "Gary Donovan",
+    "managerId" : 2,
+    "managerName" : "Julie Taylor",
+    "reports" : 0,
+    "title" : "Marketing Manager",
+    "Phone" : "617-000-0009",
+    "email" : "gdonovan@gmail.com",
+    "pic" : "gary_donovan.jpg"
+}
+{
+    "_id" : ObjectId("57e8760655e195b227f2a108"),
+    "id" : 10,
+    "Name" : "Kathleen Byrne",
+    "managerId" : 5,
+    "managerName" : "Ray Moore",
+    "reports" : 0,
+    "title" : "Sales Representative",
+    "Phone" : "617-000-0010",
+    "email" : "kbyrne@gmail.com",
+    "pic" : "kathleen_byrne.jpg"
+}
+{
+    "_id" : ObjectId("57ec85db55e195b227f5b87f"),
+    "id" : 12,
+    "Name" : "Steven Wells",
+    "managerId" : 4,
+    "managerName" : "John Williams",
+    "reports" : 0,
+    "title" : "Software Architect",
+    "Phone" : "617-000-0012",
+    "email" : "swells@gmail.com",
+    "pic" : "steven_wells.jpg"
+}
+{
+    "_id" : ObjectId("57ecaf5a55e195b227f5b8d4"),
+    "id" : 11,
+    "Name" : "Amy Jones",
+    "managerId" : 5,
+    "managerName" : "Ray Moore",
+    "reports" : 0,
+    "title" : "Sales Representative",
+    "Phone" : "617-000-0011",
+    "email" : "ajones@fakemail.com",
+    "pic" : "amy_jones.jpg"
+}
+
